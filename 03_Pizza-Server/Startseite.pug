@@ -1,0 +1,18 @@
+doctype html
+html(lang='de')
+    head 
+        meta(charset='UTF-8')
+        title Titel 
+    body 
+        h1 Willkommen auf unserer Pizzeria-Seite 
+        div Aktuelle Angebote: 
+        p 
+            a(href='/gibtsnicht') Fehlerseite 
+        div 
+            each pizza in pizzaOffers
+                div= pizza.name + ', ' + pizza.costs + ' EUR'
+        form(action='/bestellung' method='post' style='margin-top: 20px; padding: 1em; border: 1px solid black')
+            input(placeholder='Bestellung...' type='text' name='bestellung')
+            input(placeholder='Adresse...' type='text' name='adresse')
+            button(type='submit') Absenden
+  

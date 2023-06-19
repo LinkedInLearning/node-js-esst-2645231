@@ -1,0 +1,24 @@
+doctype html
+html(lang='de')
+    head 
+        meta(charset='UTF-8')
+        title Pizzaseite 
+        style(type='text/css').
+            body {
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+
+            input, select, button {
+                font-size: 20px;
+                padding: 0.5em;
+            }
+    body 
+        
+        form(action='/bestellung' method='post' style='margin-top: 20px; padding: 1em; border: 1px solid black')
+            select(name='bestellung')
+                each pizza in pizzaOffers
+                    option(value=pizza.name)= pizza.name + ', ' + pizza.costs + ' EUR'
+            input(placeholder='Adresse...' type='text' name='adresse')
+            p
+                button(type='submit') Bestellen!

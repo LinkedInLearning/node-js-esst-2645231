@@ -1,0 +1,15 @@
+doctype html
+html(lang='de')
+    head 
+        meta(charset='UTF-8')
+        title Pizzaseite 
+        style(type='text/css').
+            body {
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+    body 
+        h1 Aktuelle Bestellungen 
+        ul
+            each order in orders
+                li= order.bestellung + ', ' + order.adresse + ', ' + order.datum

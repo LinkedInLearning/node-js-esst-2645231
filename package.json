@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-esst",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "dotenv": "^16.1.4",
+    "esmock": "^2.3.1",
+    "express": "^4.18.2",
+    "mariadb": "^3.1.2",
+    "pug": "^3.0.2",
+    "sequelize": "^6.32.0",
+    "ws": "^8.13.0"
+  }
+}

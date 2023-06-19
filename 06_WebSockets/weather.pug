@@ -1,0 +1,19 @@
+doctype html
+html(lang='de')
+    head 
+        meta(charset='UTF-8')
+        title Wetter 
+        style(type='text/css').
+            body {
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+    body 
+        p(id="weather-element")= weatherText
+
+        script(type='text/javascript').
+            const ws = new WebSocket('ws://localhost:3600');
+            ws.addEventListener('message', msg => {
+                document.getElementById('weather-element').innerHTML = msg.data;
+            })
+  
