@@ -12,9 +12,25 @@ Mit der Hilfe von praktischen Challenge/Solution-Einheiten können Sie Ihr Wisse
 
 Der Kurs zeichnet zudem durch eine nahtlose Integration in GitHub Codespaces, einer cloudbasierten Entwicklungsumgebung (IDE), aus. Sie müssen keinen lokalen Rechner einrichten und können direkt zu jeder Zeit praktische Übungen durchführen. 
 
+## Branches
+
+Alle Inhalte sind direkt im `main`-Branch abgelegt.
+Die Lösungen finden sich im Java package `java.com.linkedinlearning.solutions`.
+
 ## Installation
 
-1. Klonen Sie das Repository in Ihre lokale Maschine unter Verwendung von terminal (Mac), CMD (Windows) oder ein anderes Werkzeug mit grafischer Bedienoberfläche wie SourceTree.
+Um die Übungsdateien nutzen zu können und selbst mitzucoden, können Sie GitHub Codespaces nutzen oder das Repository klonen und alle Abhängigkeiten selbst installieren.
+
+### Codespaces (empfohlen)
+Um die Aufgaben selbst zu lösen, legen Sie sich einen eigenen Codespace für den Branch main an. Dazu benötigen Sie einen github-Account.
+
+1. Klicken Sie auf den Button *Code*, dann auf *Codespaces* und schließlich auf *Create codespace on main*.
+
+### Ohne Codespaces
+1. Installieren Sie git
+2. Installieren Sie node
+3. Klonen Sie das Repository
+4. Führen Sie im Terminal ``npm install`` aus, um die nötigen Abhängigkeiten zu installieren.
 
 ### Autor
 
